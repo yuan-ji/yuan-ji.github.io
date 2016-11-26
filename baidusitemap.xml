@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+    
+  <url>
+    <loc>http://www.yuan-ji.me/2016/11/26/%E5%A6%82%E4%BD%95%E5%9C%A8Windows-Subsystem-for-Linux-(WSL)-%E4%B8%8A%E8%BF%90%E8%A1%8CLinux-GUI-%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2016-11-26T18:27:05.129Z</lastmod>
+    <data>
+        <display>
+        <title>如何在 Windows Subsystem for Linux (WSL) 上运行 Linux GUI 软件</title>
+        <pubTime>2016-11-26T05:01:40.000Z</pubTime>
+        
+        <tag>WSL</tag>
+         
+        <tag>X</tag>
+         
+         
+           
+             
+              <breadCrumb title="简明教程" url="http://www.yuan-ji.me/categories/%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.yuan-ji.me/2016/11/19/%E4%BD%BF%E7%94%A8-Hexo-%E5%9C%A8-Github-Pages-%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2016-11-20T12:07:46.811Z</lastmod>
+    <data>
+        <display>
+        <title>使用 Hexo 在 Github Pages 上搭建个人博客</title>
+        <pubTime>2016-11-19T22:59:30.000Z</pubTime>
+        
+        <tag>Github</tag>
+         
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="简明教程" url="http://www.yuan-ji.me/categories/%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+</urlset>
