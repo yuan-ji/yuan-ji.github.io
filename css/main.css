@@ -1678,7 +1678,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff17ff;
+  background: #2299d9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1845,6 +1845,8 @@ pre .javascript .function {
 }
 .theme-next #ds-thread #ds-reset .ds-textarea-wrapper textarea {
   height: 60px;
+  font-family: 'Monda', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 16px;
 }
 .theme-next #ds-reset .ds-rounded-top {
   border-radius: 0;
@@ -1863,7 +1865,8 @@ pre .javascript .function {
   top: 11px;
 }
 .theme-next #ds-thread #ds-reset .ds-sync {
-  top: 5px;
+/*top: 5px;*/
+  display: none !important;
 }
 .theme-next #ds-thread #ds-reset .ds-post-button {
   top: 4px;
