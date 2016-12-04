@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://www.yuan-ji.me/Hexo-%E4%BC%98%E5%8C%96%EF%BC%9A%E6%8F%90%E4%BA%A4sitemap%E5%8F%8A%E8%A7%A3%E5%86%B3%E7%99%BE%E5%BA%A6%E7%88%AC%E8%99%AB%E6%8A%93%E5%8F%96-GitHub-Pages-%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2016-12-04T10:05:14.998Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo 优化：提交 sitemap 及解决百度爬虫无法抓取 GitHub Pages 链接问题</title>
+        <pubTime>2016-12-03T13:23:45.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>GitHub Pages</tag>
+         
+         
+           
+             
+              <breadCrumb title="简明教程" url="http://www.yuan-ji.me/categories/%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.yuan-ji.me/%E5%A6%82%E4%BD%95%E5%9C%A8Windows-Subsystem-for-Linux-(WSL)-%E4%B8%8A%E8%BF%90%E8%A1%8CLinux-GUI-%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2016-12-04T09:56:16.138Z</lastmod>
     <data>
@@ -32,28 +54,6 @@
         <display>
         <title>使用 Hexo 在 Github Pages 上搭建个人博客</title>
         <pubTime>2016-11-19T22:59:30.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>GitHub</tag>
-         
-         
-           
-             
-              <breadCrumb title="简明教程" url="http://www.yuan-ji.me/categories/%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.yuan-ji.me/Hexo-%E4%BC%98%E5%8C%96%EF%BC%9A%E6%8F%90%E4%BA%A4sitemap%E5%8F%8A%E8%A7%A3%E5%86%B3%E7%99%BE%E5%BA%A6%E7%88%AC%E8%99%AB%E6%8A%93%E5%8F%96-GitHub-Pages-%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2016-12-03T15:02:55.376Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo 优化：提交 sitemap 及解决百度爬虫无法抓取 GitHub Pages 链接问题</title>
-        <pubTime>2016-12-03T13:23:45.000Z</pubTime>
         
         <tag>Hexo</tag>
          
