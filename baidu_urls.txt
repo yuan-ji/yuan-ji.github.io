@@ -1,3 +1,3 @@
+http://www.yuan-ji.me/C-C-位域-Bit-fields-学习心得/
 http://www.yuan-ji.me/Hexo-优化：提交sitemap及解决百度爬虫抓取-GitHub-Pages-问题/
 http://www.yuan-ji.me/如何在Windows-Subsystem-for-Linux-(WSL)-上运行Linux-GUI-软件/
-http://www.yuan-ji.me/使用-Hexo-在-Github-Pages-上搭建博客/
