@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="JI's Blog">
 <meta property="og:description" content="Bit field 的定义
 “ 位域 “ 或 “ 位段 “(Bit field)为一种数据结构，可以把数据以位的形式紧凑的储存，并允许程序员对此结构的位进行操作。这种数据结构的一个好处是它可以使数据单元节省储存空间，当程序需要成千上万个数据单元时，这种方法就显得尤为重要。第二个好处是位段可以很方便的访问一个整数值的部分内容从而可以简化程序源代码。而这种数据结构的缺点在于，位段实现依赖于具体的机器和">
-<meta property="og:updated_time" content="2016-12-10T22:39:39.934Z">
+<meta property="og:updated_time" content="2016-12-10T22:42:09.420Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C/C++ 位域 Bit fields 学习心得">
 <meta name="twitter:description" content="Bit field 的定义
@@ -346,7 +346,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-check-o"></i>
             </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-12-10T23:39:39+01:00">
+            <time title="Post modified" itemprop="dateModified" datetime="2016-12-10T23:42:09+01:00">
               2016-12-10
             </time>
             
@@ -447,7 +447,7 @@
 <p>例如声明如下一个位域:</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">struct</span> _PRCODE</div><div class="line">&#123;</div><div class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> code1: <span class="number">2</span>;</div><div class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> cdde2: <span class="number">2</span>;</div><div class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> code3: <span class="number">8</span>;</div><div class="line">&#125;;</div><div class="line"><span class="keyword">struct</span> _PRCODE prcode;</div></pre></td></tr></table></figure>
 <p>该定义使 <code>prcode</code>包含 2 个 2 Bits 位域和 1 个 8 Bits 位域，我们可以使用结构体的成员运算符对其进行赋值<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">prcode.code1 = <span class="number">0</span>;</div><div class="line">prcode.code2 = <span class="number">3</span>;</div><div class="line">procde.code3 = <span class="number">102</span>;</div></pre></td></tr></table></figure></p>
-<p>tips:<br>赋值时要注意值的大小不能超过位域的容量，例如 prcode.code3 为 8 Bits 的位域，其容量为 2^8 = 256，即 赋值范围应为 [0,255] 。</p>
+<p>tips:<br>赋值时要注意值的大小不能超过位域的容量，例如 prcode.code3 为 8 Bits 的位域，其容量为 2^8 = 256，即赋值范围应为 [0,255] 。</p>
 <h2 id="位域的大小和对齐"><a href="#位域的大小和对齐" class="headerlink" title="位域的大小和对齐"></a>位域的大小和对齐</h2><h3 id="位域的大小"><a href="#位域的大小" class="headerlink" title="位域的大小"></a>位域的大小</h3><p>例如以下位域：</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">struct</span> box </div><div class="line">&#123;</div><div class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> a: <span class="number">1</span>;</div><div class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span>  : <span class="number">3</span>;</div><div class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> b: <span class="number">4</span>;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 <p>该位域结构体中间有一个未命名的位域，占据 3 Bits，仅起填充作用，无实际意义。 填充使得该结构总共使用了 8 Bits。但 C 语言使用 unsigned int 作为位域的基本单位，即使一个结构的唯一成员为 1 Bit 的位域，该结构大小也和一个 unsigned int 大小相同。 有些系统中， unsigned int 为 16 Bits， 在 x86 系统中为 32 Bits。文章以下内容中均默认 unsigned int 为 32 Bits。 </p>
