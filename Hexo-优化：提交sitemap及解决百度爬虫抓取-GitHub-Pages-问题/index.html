@@ -505,7 +505,7 @@ sitemap 的生成和提交
 <p>首先，在 Hexo 根目录下，安装本插件：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-baidu-url-submit --save</div></pre></td></tr></table></figure></p>
 <p>然后，同样在根目录下，把以下内容配置到 _config.yml 文件中:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">baidu_url_submit:</div><div class="line">  count: 3 <span class="comment">## 比如 3，代表提交最新的三个链接</span></div><div class="line">  host: www.hui-wang.info <span class="comment">## 在百度站长平台中注册的域名</span></div><div class="line">  token: your_token <span class="comment">## 请注意这是您的秘钥， 请不要发布在公众仓库里 !</span></div><div class="line">  path: baidu_urls.txt <span class="comment">## 文本文档的地址， 新链接会保存在此文本文档里</span></div></pre></td></tr></table></figure></p>
 <p>其次，记得查看 _config.ym 文件中 url 的值， 必须包含是百度站长平台注册的域名（一般有 www）， 比如:<br>​<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># URL</span></div><div class="line">url: http://www.hui-wang.info</div><div class="line">root: /</div><div class="line">permalink: :year/:month/:day/:title/</div></pre></td></tr></table></figure></p>
-<p>最后，加入新的 deployer:<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">- type:</span> baidu_url_submitter</div></pre></td></tr></table></figure></p>
+<p>最后，加入新的 deployer:<br><figure class="highlight elm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="title">deploy</span>:</div><div class="line">- <span class="keyword">type</span>: baidu_url_submitter</div></pre></td></tr></table></figure></p>
 <p>执行 hexo deploy 的时候，新的连接就会被推送了。</p>
 </blockquote>
 <p>tips:</p>
@@ -572,9 +572,9 @@ sitemap 的生成和提交
       
         <div class="post-tags">
           
-            <a href="/tags/GitHub-Pages/" rel="tag"># GitHub Pages</a>
-          
             <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/tags/GitHub-Pages/" rel="tag"># GitHub Pages</a>
           
         </div>
       
