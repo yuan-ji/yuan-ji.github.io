@@ -107,7 +107,7 @@ sitemap 的生成和提交
 <meta property="og:image" content="http://oh7sgu60j.bkt.clouddn.com/image/Hexo-%E4%BC%98%E5%8C%96%EF%BC%9A%E6%8F%90%E4%BA%A4sitemap%E5%8F%8A%E8%A7%A3%E5%86%B3%E7%99%BE%E5%BA%A6%E7%88%AC%E8%99%AB%E6%8A%93%E5%8F%96-GitHub-Pages-%E9%97%AE%E9%A2%98/%E6%8A%93%E5%8F%96.jpg-img">
 <meta property="og:image" content="http://oh7sgu60j.bkt.clouddn.com/image/Hexo-%E4%BC%98%E5%8C%96%EF%BC%9A%E6%8F%90%E4%BA%A4sitemap%E5%8F%8A%E8%A7%A3%E5%86%B3%E7%99%BE%E5%BA%A6%E7%88%AC%E8%99%AB%E6%8A%93%E5%8F%96-GitHub-Pages-%E9%97%AE%E9%A2%98/%E6%88%90%E5%8A%9F%E9%93%BE%E6%8E%A5.jpg">
 <meta property="og:image" content="http://oh7sgu60j.bkt.clouddn.com/image/Hexo-%E4%BC%98%E5%8C%96%EF%BC%9A%E6%8F%90%E4%BA%A4sitemap%E5%8F%8A%E8%A7%A3%E5%86%B3%E7%99%BE%E5%BA%A6%E7%88%AC%E8%99%AB%E6%8A%93%E5%8F%96-GitHub-Pages-%E9%97%AE%E9%A2%98/%E9%93%BE%E6%8E%A5%E6%8F%90%E4%BA%A4.jpg-img.s">
-<meta property="og:updated_time" content="2016-12-04T10:07:39.131Z">
+<meta property="og:updated_time" content="2017-04-26T09:56:30.368Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 优化：提交 sitemap 及解决百度爬虫无法抓取 GitHub Pages 链接问题">
 <meta name="twitter:description" content="前言博客搭建起来了，但搜索引擎总搜不到，太没有成就感了。于是下一步要做的就是针对搜索引擎的优化，最终根据网上资料和自己遇到的实际情况，完成此博文。本文主要分以下三个部分：
@@ -364,8 +364,8 @@ sitemap 的生成和提交
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-check-o"></i>
             </span>
-            <time title="Post modified" itemprop="dateModified" datetime="2016-12-04T11:07:39+01:00">
-              2016-12-04
+            <time title="Post modified" itemprop="dateModified" datetime="2017-04-26T11:56:30+02:00">
+              2017-04-26
             </time>
             
           </span>
@@ -491,7 +491,7 @@ sitemap 的生成和提交
 <h4 id="向百度提交"><a href="#向百度提交" class="headerlink" title="向百度提交"></a>向百度提交</h4><p>与谷歌类似，我们可以直接向百度交 sitemap，登录 <a href="http://zhanzhang.baidu.com/linksubmit/index" rel="external nofollow noopener noreferrer" target="_blank">百度站长平台</a>，点击 <code>网页抓取</code>-&gt; <code>链接提交</code>，在 <code>自动提交</code>中选择 <code>sitemap</code>，输入自己的域名加 baidusitemap.xml 即可，比如我的是 <a href="http://www.yuan-ji.me/baidusitemap.xml">http://www.yuan-ji.me/baidusitemap.xml</a> 。 之后可查看 url 提取是否成功。</p>
 <p><img src="http://oh7sgu60j.bkt.clouddn.com/image/Hexo-%E4%BC%98%E5%8C%96%EF%BC%9A%E6%8F%90%E4%BA%A4sitemap%E5%8F%8A%E8%A7%A3%E5%86%B3%E7%99%BE%E5%BA%A6%E7%88%AC%E8%99%AB%E6%8A%93%E5%8F%96-GitHub-Pages-%E9%97%AE%E9%A2%98/%E7%99%BE%E5%BA%A6%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE.jpg-img" alt="baisu 站点地图"></p>
 <p>tips:<br>和谷歌不同，百度提交了链接也不一定收录，要不断提升文章质量和数量才行。</p>
-<h2 id="百度相关的搜索配置"><a href="#百度相关的搜索配置" class="headerlink" title="百度相关的搜索配置"></a>百度相关的搜索配置</h2><p>由于 GitHub 屏蔽了百度的爬虫，即使提交成功，百度知道这里有可供抓取的链接，也不一定能抓取成功。 首先我们先检测一下百度爬虫是否可以抓取网页。在百度站长平台<code>网页抓取</code>-&gt;<code>抓取斩断</code> 中，选择<code>PC UA</code>点击抓取 , 查看抓取状态， 如果显示 <code>抓取失败</code>， 则需要进一步的配置。</p>
+<h2 id="百度相关的搜索配置"><a href="#百度相关的搜索配置" class="headerlink" title="百度相关的搜索配置"></a>百度相关的搜索配置</h2><p>由于 GitHub 屏蔽了百度的爬虫，即使提交成功，百度知道这里有可供抓取的链接，也不一定能抓取成功。 首先我们先检测一下百度爬虫是否可以抓取网页。在百度站长平台<code>网页抓取</code>-&gt;<code>抓取诊断</code> 中，选择<code>PC UA</code>点击抓取 , 查看抓取状态， 如果显示 <code>抓取失败</code>， 则需要进一步的配置。</p>
 <p><img src="http://oh7sgu60j.bkt.clouddn.com/image/Hexo-%E4%BC%98%E5%8C%96%EF%BC%9A%E6%8F%90%E4%BA%A4sitemap%E5%8F%8A%E8%A7%A3%E5%86%B3%E7%99%BE%E5%BA%A6%E7%88%AC%E8%99%AB%E6%8A%93%E5%8F%96-GitHub-Pages-%E9%97%AE%E9%A2%98/%E6%8A%93%E5%8F%96.jpg-img" alt="抓取测试"></p>
 <p>tips:<br>选择 <code>移动 UA</code>抓取一般都是会成功的。</p>
 <h3 id="主动推送和自动推送"><a href="#主动推送和自动推送" class="headerlink" title="主动推送和自动推送"></a>主动推送和自动推送</h3><p>百度提供了多种链接提交的方式</p>
@@ -505,7 +505,7 @@ sitemap 的生成和提交
 <p>首先，在 Hexo 根目录下，安装本插件：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-baidu-url-submit --save</div></pre></td></tr></table></figure></p>
 <p>然后，同样在根目录下，把以下内容配置到 _config.yml 文件中:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">baidu_url_submit:</div><div class="line">  count: 3 <span class="comment">## 比如 3，代表提交最新的三个链接</span></div><div class="line">  host: www.hui-wang.info <span class="comment">## 在百度站长平台中注册的域名</span></div><div class="line">  token: your_token <span class="comment">## 请注意这是您的秘钥， 请不要发布在公众仓库里 !</span></div><div class="line">  path: baidu_urls.txt <span class="comment">## 文本文档的地址， 新链接会保存在此文本文档里</span></div></pre></td></tr></table></figure></p>
 <p>其次，记得查看 _config.ym 文件中 url 的值， 必须包含是百度站长平台注册的域名（一般有 www）， 比如:<br>​<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># URL</span></div><div class="line">url: http://www.hui-wang.info</div><div class="line">root: /</div><div class="line">permalink: :year/:month/:day/:title/</div></pre></td></tr></table></figure></p>
-<p>最后，加入新的 deployer:<br><figure class="highlight elm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="title">deploy</span>:</div><div class="line">- <span class="keyword">type</span>: baidu_url_submitter</div></pre></td></tr></table></figure></p>
+<p>最后，加入新的 deployer:<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">- type:</span> baidu_url_submitter</div></pre></td></tr></table></figure></p>
 <p>执行 hexo deploy 的时候，新的连接就会被推送了。</p>
 </blockquote>
 <p>tips:</p>
@@ -572,9 +572,9 @@ sitemap 的生成和提交
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
-          
             <a href="/tags/GitHub-Pages/" rel="tag"># GitHub Pages</a>
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
         </div>
       
@@ -759,8 +759,8 @@ sitemap 的生成和提交
       <div class="footer-inner">
         <div class="copyright">
   
-  &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
